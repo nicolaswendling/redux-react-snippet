@@ -1,0 +1,29 @@
+:root {
+  --background: #002a69;
+  --accent: #ebff41;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  text-align: center;
+  color: var(--accent);
+  background-color: var(--background);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 auto 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+}
