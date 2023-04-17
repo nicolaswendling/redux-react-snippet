@@ -1,5 +1,7 @@
 # Snippet React Redux
 
+A simple React Redux snippet.
+
 ## Dependencies
 
 - Redux
