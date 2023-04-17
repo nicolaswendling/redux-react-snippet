@@ -1,6 +1,6 @@
 # Snippet React Redux
 
-A simple React Redux snippet.
+A simple React Redux snippet: [Demo](https://redux-react-snippet.vercel.app/)
 
 ## Dependencies
 
