@@ -20,7 +20,7 @@ A simple React Redux snippet: [Demo](https://redux-react-snippet.vercel.app/)
 
 ### Store
 
-`states/store.tsx`
+`src/states/store.tsx`
 
 ```typescript
 import {configureStore} from "@reduxjs/toolkit"
@@ -38,7 +38,7 @@ export default store
 
 ### Root Reducer
 
-`states/rootReducer.tsx`
+`src/states/rootReducer.tsx`
 
 ```typescript
 import {combineReducers} from "@reduxjs/toolkit"
@@ -53,7 +53,7 @@ export default rootReducer
 
 ### Slices
 
-`states/slices/counter.ts`
+`src/states/slices/counter.ts`
 
 ```typescript
 import {createSlice, PayloadAction} from "@reduxjs/toolkit"
