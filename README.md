@@ -22,7 +22,7 @@ A simple React Redux snippet: [Demo](https://redux-react-snippet.vercel.app/)
 
 `src/states/store.tsx`
 
-set up your Redux store with Redux Toolkit
+set up **Redux store** with **Redux Toolkit** (RTK)
 
 ```typescript
 import {configureStore} from "@reduxjs/toolkit"
@@ -59,7 +59,7 @@ export default rootReducer
 
 `src/states/slices/counter.ts`
 
-Define a simple counter state and actions for incrementing and decrementing the counter.
+Define a simple **counter state** and **actions** for incrementing and decrementing the counter.
 
 ```typescript
 import {createSlice, PayloadAction} from "@reduxjs/toolkit"
