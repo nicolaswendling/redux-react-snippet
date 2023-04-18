@@ -82,3 +82,51 @@ export const {increment, decrement, incrementByAmount} = counterSlice.actions
 
 export default counterSlice.reducer
 ```
+
+## Consume in App
+
+### Provider
+
+```typescript
+import {Provider} from "react-redux"
+import store from "./states/store"
+
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+)
+```
+
+### Consuming
+
+```typescript
+import {useSelector, useDispatch} from "react-redux"
+import {RootState, AppDispatch} from "../states/store"
+import {increment, decrement, incrementByAmount} from "../states/slices/counter"
+
+const App: React.FC = () => {
+  const counter = useSelector((state: RootState) => state.counter.value)
+  const dispatch = useDispatch<AppDispatch>()
+
+  const handleIncrement = () => {
+    dispatch(increment())
+  }
+
+  const handleDecrement = () => {
+    dispatch(decrement())
+  }
+
+  const handleIncrementByAmount = (amount: number) => {
+    dispatch(incrementByAmount(amount))
+  }
+
+  return (
+    <div className="buttons">
+      <Button onClick={handleIncrement}>Increment</Button>
+      <Button onClick={handleDecrement}>Decrement</Button>
+      <Button onClick={() => handleIncrementByAmount(5)}>Increment by 5</Button>
+    </div>
+  )
+}
+```
